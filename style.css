@@ -1,0 +1,138 @@
+       h1{
+        
+            animation-duration: 3s;
+            animation-name: jello;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          
+       }
+
+       
+       
+       body{
+        margin: 0px;
+       }
+       
+       
+       /* Стили для шапки */
+        header {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        /* Стили для основного контента */
+        main {
+            max-width: 1000px;
+            margin: 20px auto 60px; 
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        /* Стили для подвала */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bot{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            z-index: 1;
+            width: 300px;
+            height: 270px;
+            background-color: lightslategrey;
+            padding: 6px;
+            border-radius:10px;
+        }
+        input{
+            border-radius: 10px;
+        }
+        .textarea{
+            color: black;
+            background-color:white;
+            height: 100px;
+            white-space: wrap;
+        }
+        .textarea:focus{
+            background-color: wheat;
+        }
+        .button{
+        padding:10px;
+        background-color: hsl(0, 52%, 73%);
+        }
+        .button:hover{
+            background-color: hsl(0, 19%, 50%);
+        }
+.osn{
+margin-left: 288px;
+}
+
+img{
+     height:450px; 
+    width: 450px;
+    object-fit: cover;
+}
+
+.icon{
+    width:60px;
+    height:60px;
+}
+
+/* планшеты горизонтально */
+@media (min-width: 992px) and (max-width: 1199px) {
+ 
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+.osn{
+    margin-left: 22px;
+    
+}
+img{
+    width: 282px;
+    height:282px;
+}
+.bot{
+    display:none;
+}
+}
+
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+    .bot{
+        display:none;
+    }
+
+}
+
+/* телефоны вертикально */
+@media (max-width: 480px) {
+    .osn{
+        margin-left: 22px;
+    }
+    img{
+        width:160px;
+        height:160px;padding: 5px;
+    }
+    p{
+        font-size: 18px ;
+    }
+    .bot{
+        display:none;
+    }
+}
+
+.dofoot{
+    bottom: 6px;
+}
